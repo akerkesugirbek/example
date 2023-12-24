@@ -27,5 +27,4 @@ public class MyApplication {
             System.out.println(s);
         }
     }
-
 }

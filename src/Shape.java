@@ -28,6 +28,7 @@ public class Shape{
             averageSide += currentPoint.distanceTo(nextPoint);
         }
         return averageSide / numPoints;
+
     }
     public double longestSide(){
         double longestSide = 0.0;
