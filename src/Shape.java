@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class Shape{
     final
     private ArrayList<Point> points;
