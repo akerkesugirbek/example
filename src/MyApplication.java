@@ -7,6 +7,7 @@ public class MyApplication {
         // Test your implementation here
         Scanner scanner = new Scanner(System.in);
 
+
         ArrayList<Point> points = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
             System.out.println("Enter x coordinate for point " + (i + 1) + ": ");

@@ -29,6 +29,7 @@ public class Shape{
         }
         return averageSide / numPoints;
 
+
     }
     public double longestSide(){
         double longestSide = 0.0;
