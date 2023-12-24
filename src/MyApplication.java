@@ -23,8 +23,8 @@ public class MyApplication {
 
         Shape shape = new Shape(points);
 
-        for (String s : Arrays.asList("Perimeter: " + shape.perimeter(), "Longest Side: " + shape.longestSide(),
-                "Average Side: " + shape.averageSide())) {
+        for (String s : Arrays.asList("Perimeter: " + shape.findPerimeter(), "Longest Side: " + shape.findLongestSide(),
+                "Average Side: " + shape.findAverageSide())) {
             System.out.println(s);
         }
     }

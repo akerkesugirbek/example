@@ -7,40 +7,40 @@ public class Shape{
         this.points = points;
     }
 
-    public double perimeter(){
-        double perimeter = 0.0;
+    public double findPerimeter(){
+        double findPerimeter = 0.0;
         int numPoints;
         numPoints = points.size();
         for(int i = 0; i < numPoints; i++ ){
             Point currentPoint = points.get(i);
             Point nextPoint = points.get((i + 1) % numPoints);
-            perimeter += currentPoint.distanceTo(nextPoint);
+            findPerimeter += currentPoint.distanceTo(nextPoint);
         }
 
-        return perimeter;
+        return findPerimeter;
     }
-    public double averageSide(){
-        double averageSide = 0.0;
+    public double findAverageSide(){
+        double findAverageSide = 0.0;
         int numPoints = points.size();
         for(int i = 0; i <numPoints; i++){
             Point currentPoint = points.get(i);
             Point nextPoint = points.get((i + 1) % numPoints);
-            averageSide += currentPoint.distanceTo(nextPoint);
+            findAverageSide += currentPoint.distanceTo(nextPoint);
         }
-        return averageSide / numPoints;
+        return findAverageSide / numPoints;
 
 
     }
-    public double longestSide(){
-        double longestSide = 0.0;
+    public double findLongestSide(){
+        double findLongestSide = 0.0;
         for(int i = 0; i <points.size(); i++){
             Point currentPoint = points.get(i);
             Point nextPoint = points.get((i + 1) % points.size());
             double currentSide = currentPoint.distanceTo(nextPoint);
-            if(currentSide > longestSide){
-                longestSide = currentSide;
+            if(currentSide > findLongestSide){
+                findLongestSide = currentSide;
             }
         }
-        return longestSide;
+        return findLongestSide;
         }
 }
