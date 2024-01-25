@@ -42,3 +42,4 @@ public class Shape{
         return longestSide;
     }
 }
+
